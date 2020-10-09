@@ -1,0 +1,26 @@
+.button-container {
+    position: relative;
+    #favorite-button {
+        width: 44px;
+        height: 44px;
+        top: -10rem;
+        right: 1rem;
+        background: #fff;
+        border: none;
+        position: absolute;
+        display: block;
+        padding: .4rem;
+
+        i {
+            fill: #0048ff;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    #favorite-button {
+        width: 55px !important;
+        height: 55px !important;
+        right: 4rem !important;
+    }
+}

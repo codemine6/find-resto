@@ -1,0 +1,62 @@
+.skeleton-detail {
+    .image {
+        width: 100%;
+        height: 18rem;
+        background: #ddd;
+    }
+    .category {
+        width: 3rem;
+        height: 2rem;
+        background: #ddd;
+        border-radius: .3rem;
+        margin: 1.5rem;
+    }
+    .address {
+        width: 50%;
+        height: 1rem;
+        background: #ddd;
+        border-radius: .3rem;
+    }
+    .name {
+        width: 40%;
+        height: 1.5rem;
+        background: #ddd;
+        border-radius: .3rem;
+        margin: 1.5rem 1.5rem 3rem;
+    }
+    .text {
+        height: 1.5rem;
+        background: #ddd;
+        border-radius: .3rem;
+        margin: 1rem 1.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .text {
+        margin: 5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .skeleton-detail {
+        .image {
+            height: 35rem;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .skeleton-detail {
+        .image {
+            height: 45rem;
+        }
+        .category {
+            margin-top: 5rem;
+        }
+        .category, .address, .name, .text {
+            margin-left: 7rem;
+            margin-right: 7rem;
+        }
+    }
+}

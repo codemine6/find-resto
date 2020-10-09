@@ -1,0 +1,71 @@
+#consumer-reviews {
+    #add-review {
+        text-align: center;
+
+        button {
+            line-height: 44px;
+            color: #5377d1;
+            font-size: 1rem;
+            font-weight: bold;
+            background: transparent;
+            border: none;
+        }
+        i {
+            width: 1.2rem;
+            fill: #5377d1;
+            display: inline-block;
+        }
+    }
+    .review-list {
+        margin: 1.5rem;
+
+        div {
+            border-radius: .5rem;
+            box-shadow: 0 .3rem 1rem #0002;
+            padding: 1rem;
+            margin: 1rem 0;
+
+            span {
+                width: 2.5rem;
+                line-height: 2.5rem;
+                color: #fff;
+                text-align: center;
+                background: #5377d1;
+                border-radius: 50%;
+                display: inline-block;
+            }
+            .name {
+                font-weight: bold;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                margin: -2.5rem 0 .5rem 4rem;
+            }
+            .review {
+                font-size: .9rem;
+                margin-left: 4rem;
+            }
+            .date {
+                color: #888;
+                font-size: .8rem;
+                margin: .5rem 0 0 4rem;
+            }
+        }
+    }    
+}
+
+@media (min-width: 768px) {
+    #consumer-reviews {
+        .review-list {
+            width: 30rem;
+            margin: auto;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    #consumer-reviews {
+        flex: 1;
+        display: block !important;
+    }
+}

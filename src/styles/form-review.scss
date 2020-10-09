@@ -1,0 +1,36 @@
+#form-review {
+    border-radius: .5rem;
+    box-shadow: -.3rem 0 1rem #0002;
+    display: none;
+    padding: 1.5rem;
+    margin: 1.5rem;
+
+    label {
+        display: block;
+        margin: 1rem 0;
+    }
+    input {
+        width: 100%;
+        border-radius: .5rem;
+        padding: .6rem;
+    }
+    textarea {
+        width: 100%;
+        border-radius: .5rem;
+        padding: .7rem;
+    }
+    .send {
+        height: 44px;
+        color: #fff;
+        font-size: 1rem;
+        background: #5377d1;
+        border: none;
+        border-radius: .5rem;
+        padding: 0 1.5rem;
+        margin-top: 1rem;
+    }
+}
+
+.show {
+    display: block !important;
+}

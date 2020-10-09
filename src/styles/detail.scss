@@ -1,0 +1,113 @@
+.main-info {
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 65vw;
+        object-fit: cover;
+    }
+    .city {
+        top: 2rem;
+        left: 0;
+        color: #fff;
+        font-weight: bold;
+        background: #0048ff;
+        border-radius: 0 1rem 1rem 0;
+        position: absolute;
+        padding: .5rem 1rem;
+    }
+    .rating {
+        display: block;
+        margin: -3rem 1.5rem 0;
+
+        &::before {
+            font-size: 1.5rem;
+        }
+    }        
+    .categories {
+        margin: 2.5rem 1.5rem 0;
+
+        span {
+            color: #0048ff;
+            font-size: .9rem;
+            border: .1rem solid #0048ff;
+            border-radius: .3rem;
+            padding: .3rem;
+            margin-right: .5rem;
+        }
+    }
+    .address {
+        margin: 1.5rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+        margin: 1.5rem;
+    }
+}
+.menu-content {
+    display: flex;
+    justify-content: space-around;
+    margin: 1.5rem 3rem;
+
+    button {
+        line-height: 44px;
+        color: #0048ff;
+        font-size: 1rem;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+
+        &:focus {
+            outline: none;
+        }
+    }
+    .activate {
+        border-bottom: .1rem solid #0048ff;
+    }
+}
+.more {
+    #description {
+        line-height: 1.5rem;
+        text-indent: 2rem;
+        margin: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .menu-content {
+        margin: 1.5rem 10rem;
+    }
+    .more {
+        margin: 5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main-info {
+        margin: 0 2rem;
+
+        .categories {
+            span {
+                padding: .5rem;
+            }
+        }
+    }
+    .menu-content {
+        display: none;
+    }
+    .more {
+        display: flex;
+        margin: 0 2rem;
+
+        div {
+            flex: 2;
+
+            #description {
+                font-size: 1.1rem;
+                display: block !important;
+                margin-right: 5rem;
+                margin-bottom: 5rem;
+            }
+        }
+    }
+}

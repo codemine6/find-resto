@@ -1,0 +1,51 @@
+// Alert
+.alert {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    background: #0002;
+    position: fixed;
+    z-index: 1;
+
+    div {
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        background: #fff;
+        border-radius: .5rem;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        padding: 2rem 3rem;
+
+        span {
+            color: #0048ff;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        p {
+            color: #555;
+            white-space: nowrap;
+            margin: 1rem 0 1.5rem;
+        }
+        button {
+            height: 44px;
+            color: #fff;
+            background: #0048ff;
+            border: none;
+            border-radius: .5rem;
+            padding: 0 1.5rem;
+        }
+    }
+}
+
+// Toast
+toast {
+    width: 100%;
+    line-height: 3rem;
+    bottom: 0;
+    color: #fff;
+    text-align: center;
+    background: #888;
+    position: fixed;
+    display: block;
+}

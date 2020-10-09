@@ -1,0 +1,22 @@
+#restaurant-menus {
+    div {
+        margin: 1.5rem;
+
+        p {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        li {
+            color: #5377d1;
+            line-height: 1.5rem;
+            margin-left: 1rem;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    #restaurant-menus {
+        display: block !important;
+    }
+}

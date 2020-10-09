@@ -1,0 +1,54 @@
+#search-restaurant {
+    position: relative;
+    margin: 1.5rem;
+
+    label {
+        text-align: center;
+        display: block;
+        margin-bottom: 1rem;
+    }
+    #query {
+        width: 100%;
+        background: transparent;
+        border: .1rem solid #0048ff;
+        border-radius: .5rem;
+        padding: .7rem 3rem .7rem .7rem;
+    }
+    button {
+        width: 48px;
+        line-height: 48px;
+        bottom: -.6rem;
+        right: 0;
+        background: transparent;
+        border: none;
+        position: absolute;
+        cursor: pointer;
+
+        svg {
+            width: 1.2rem;
+            fill: #0048ff;
+        }
+    }
+}
+
+// Responsive
+@media (min-width: 768px) {
+    #search-restaurant {
+        width: 50%;
+        margin: 3rem auto;
+
+        label {
+            font-size: 1.2rem;
+        }
+        input {
+            padding: 1rem 3rem 1rem 1rem !important;
+        }
+        button {
+            bottom: -.3rem;
+
+            svg {
+                width: 1.4rem;
+            }
+        }
+    }
+}

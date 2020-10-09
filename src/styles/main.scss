@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+@import 'detail';
+@import 'favorite';
+@import 'home';
+
+@import 'consumer-reviews';
+@import 'favorite-button';
+@import 'form-review';
+@import 'loader';
+@import 'navbar';
+@import 'restaurant-menus';
+@import 'restaurants-list';
+@import 'skeleton-detail';
+@import 'skeleton-list';
+@import 'search-restaurant';
+@import 'utils';
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    min-height: 100vh;
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+    padding: 3.5rem 0;
+}
+
+footer {
+    width: 100%;
+    bottom: 0;
+    line-height: 3.5rem;
+    text-align: center;
+    background: #eee;
+    position: absolute;
+
+    a {
+        color: #0048ff;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+.skip {
+    top: -4rem;
+    color: #fff;
+    text-decoration: none;
+    background: #aaa;
+    position: absolute;
+    padding: 1rem;
+}
+.skip:focus {
+    top: 0;
+    z-index: 10;
+}
+
+.rating::before {
+    content: '★★★★★';
+    font-size: 1.2rem;
+    background: linear-gradient(90deg, #fab700 var(--rate), #d4d3d2 var(--rate));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+toast {
+    width: 100%;
+    line-height: 3rem;
+    bottom: 0;
+    color: #fff;
+    text-align: center;
+    background: #888;
+    position: fixed;
+    display: block;
+}

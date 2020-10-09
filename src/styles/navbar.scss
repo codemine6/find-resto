@@ -1,0 +1,72 @@
+header {
+    .app-bar {
+        width: 100%;
+        line-height: 3.5rem;
+        top: 0;
+        background: #fff;
+        box-shadow: 0 .1rem .5rem #0002;
+        position: fixed;
+        z-index: 2;
+
+        #hamburgerButton {
+            width: 44px;
+            line-height: 42px;
+            top: .4rem;
+            left: .8rem;
+            color: #0048ff;
+            font-size: 1.2rem;
+            font-weight: bold;
+            background: transparent;
+            border: none;
+            position: absolute;
+        }
+        h1 {
+            color: #0048ff;
+            font-size: 1.3rem;
+            margin-left: 4rem;
+        }
+    }
+    #navigationDrawer {
+        width: 70vw;
+        height: 100vh;
+        list-style: none;
+        background: #fff;
+        box-shadow: 0 1rem .5rem #0002;
+        position: fixed;
+        display: none;
+        padding: 2rem;
+        z-index: 2;
+
+        a {
+            line-height: 44px;
+            color: #555;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+        }
+    }
+    .open {
+        display: block !important;
+    }
+}
+
+@media (min-width: 768px) {
+    #hamburgerButton {
+        display: none;
+    }
+    #navigationDrawer {
+        width: auto !important;
+        height: 0 !important;
+        top: -1.7rem;
+        right: 1rem;
+        background: transparent !important;
+        box-shadow: none !important;
+        display: block !important;
+
+        li {
+            display: inline-block;
+            margin: 0 1rem;
+        }
+    }
+}
