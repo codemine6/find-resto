@@ -23,7 +23,7 @@
         &::before {
             font-size: 1.5rem;
         }
-    }        
+    }
     .categories {
         margin: 2.5rem 1.5rem 0;
 
@@ -89,6 +89,12 @@
         .categories {
             span {
                 padding: .5rem;
+            }
+        }
+        .rating {
+            margin: -4rem 1.5rem 0;
+            &::before {
+                font-size: 2.5rem;
             }
         }
     }
